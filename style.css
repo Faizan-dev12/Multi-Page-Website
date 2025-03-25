@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    background: #333;
+    padding: 10px;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: yellow;
+}
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: white;
+    padding: 5px;
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+img {
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+main:nth-child(even) img {
+    border-radius: 20px;
+}
